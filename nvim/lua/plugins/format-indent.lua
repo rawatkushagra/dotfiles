@@ -16,7 +16,10 @@ return {
 			conform.setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
-					c = { "clang_format" },
+					javascript = { "biome", lsp_format = "fallback" },
+					html = { lsp_format = "first" },
+					css = { lsp_format = "first" },
+					c = { "clang_format", lsp_format = "fallback" },
 				},
 				default_format_opts = {},
 				log_level = vim.log.levels.ERROR,

@@ -1,0 +1,7 @@
+BasedOnStyle: Google
+IndentWidth: 8
+Language: C
+DerivePointerAlignment: false 
+PointerAlignment: Right 
+ColumnLimit: 120
+

@@ -1,0 +1,31 @@
+configuration {
+	modes: "window,drun,run,ssh";
+	font: "JetBrainsMono Nerd Font 14";
+	show-icons: true;
+	terminal: "wezterm";
+	icon-theme: "Papirus";
+	drun-show-actions: false;
+	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+	drun-url-launcher: "xdg-open";
+	disable-history: false;
+	dpi: 72; 
+	display-drun: "🖥 "; 
+/*	display-window: ;*/
+/*	display-windowcd: ;*/
+/*	display-run: ;*/
+/*	display-ssh: ;*/
+/*	display-combi: ;*/
+/*	display-keys: ;*/
+/*	display-filebrowser: ;*/
+/*	display-recursivebrowser: ;*/
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"

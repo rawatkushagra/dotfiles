@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id picom --no-fading-openclose
-exec_always feh --bg-scale ~/.config/i3/wallhaven-yq7ywg.png
+exec_always feh --bg-scale ~/.config/i3/batman.jpg
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -68,7 +68,7 @@ for_window [class="^.*"] border pixel 0
 
 # A more modern dmenu replacement is rofi:
 
-bindsym Mod4+d exec rofi -show drun
+bindsym Mod4+backslash exec rofi -show drun
 
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
@@ -99,13 +99,13 @@ bindsym Mod4+Shift+Up move up
 bindsym Mod4+Shift+Right move right
 
 # split in horizontal orientation
-#bindsym Mod4+q split h 
+#bindsym Mod4+slash split h 
 
 # split in vertical orientation
-#bindsym Mod1+u split v
+bindsym Mod4+v split v
 
 # enter fullscreen mode for the focused container
-bindsym Mod1+semicolon fullscreen toggle
+bindsym Mod4+semicolon fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym Mod4+s layout stacking

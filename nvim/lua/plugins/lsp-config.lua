@@ -9,6 +9,10 @@ return {
 
 		vim.diagnostic.config({
 			virtual_text = true,
+			loclist = {
+				open = true,
+				severity = { min = vim.diagnostic.severity.WARN },
+			},
 		})
 
 		lspconfig.lua_ls.setup({
@@ -27,7 +31,7 @@ return {
 			capabilities = capabilities,
 		})
 
-		lspconfig.denols.setup({
+		lspconfig.ts_ls.setup({
 			capabilities = capabilities,
 		})
 
